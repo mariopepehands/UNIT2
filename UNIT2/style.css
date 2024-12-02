@@ -1,0 +1,80 @@
+/* Pentru anteturi și link */
+h1, h2, h3, a {
+    background-color: #60c0e2;
+    font-family: "Dancing Script", cursive;
+    text-align: center; /* Centrează textul */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+/* Pentru tabel */
+table {
+    background-color: #7993c9;
+    border-radius: 20px;
+    margin: 20px auto; /* Centrează tabelul */
+    text-align: left;  /* Text aliniat la stânga în interior */
+}
+
+/* Pentru imagini */
+.img-net {
+    max-width: 700px; /* Dimensiune maximă */
+    height: auto;     /* Păstrează proporțiile */
+    display: block;   /* Centrează imaginea */
+    margin: 40px auto;
+}
+
+.img-ip, .img-debit, .img-mac {
+    border-radius: 10px;
+    display: block; /* Transformă imaginea într-un element bloc */
+    margin: 10px auto; /* Centrează imaginea */
+}
+
+/* Pentru div */
+div {
+    display: flex; /* Activează flexbox */
+    flex-direction: column; /* Stivă verticală */
+    align-items: center; /* Centrează pe orizontală */
+    justify-content: center; /* Centrează pe verticală */
+}
+
+/* Pentru pagina întreagă */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Minimul pe înălțimea ferestrei */
+    background-color: #bfcde0 ; /* Fundal general */
+    font-family: Arial, sans-serif;
+}
+
+/* Adăugare dimensiuni fixe pentru slider-container */
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Înălțime fixă pentru a preveni suprapunerea */
+    width: 70%; /* Lățimea pe întreaga pagină */
+    position: relative; /* Poziție relativă pentru a controla poziționarea imaginilor */
+    overflow: hidden; /* Ascunde orice conținut în afara containerului */
+    margin: 20px auto; /* Adaugă spațiu între slider și alte elemente */
+}
+
+/* Ajustarea imaginilor */
+.slider-container img {
+    position: absolute; /* Suprapune imaginile pentru efectul de tranziție */
+    top: 0; /* Aliniere la partea de sus a containerului */
+    left: 0; /* Aliniere la partea stângă a containerului */
+    width: 100%; /* Ajustare automată a dimensiunilor pe lățime */
+    height: auto; /* Păstrarea proporțiilor imaginii */
+    opacity: 0; /* Imaginile inactive sunt invizibile */
+    transition: opacity 1s ease-in-out;
+}
+
+/* Imaginea activă */
+.slider-container img.active {
+    opacity: 1; /* Imaginea activă devine vizibilă */
+}
