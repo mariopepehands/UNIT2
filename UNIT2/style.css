@@ -1,44 +1,42 @@
-/* Pentru anteturi și link */
+
 h1, h2, h3, a {
     background-color: #60c0e2;
     font-family: "Dancing Script", cursive;
-    text-align: center; /* Centrează textul */
+    text-align: center; 
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
 }
 
-/* Pentru tabel */
 table {
     background-color: #7993c9;
     border-radius: 20px;
-    margin: 20px auto; /* Centrează tabelul */
-    text-align: left;  /* Text aliniat la stânga în interior */
+    margin: 20px auto; 
+    text-align: left;  
 }
 
-/* Pentru imagini */
+
 .img-net {
-    max-width: 700px; /* Dimensiune maximă */
-    height: auto;     /* Păstrează proporțiile */
-    display: block;   /* Centrează imaginea */
+    max-width: 700px; 
+    height: auto;     
+    display: block;   
     margin: 40px auto;
 }
 
 .img-ip, .img-debit, .img-mac {
     border-radius: 10px;
-    display: block; /* Transformă imaginea într-un element bloc */
-    margin: 10px auto; /* Centrează imaginea */
+    display: block; 
+    margin: 10px auto; 
 }
 
-/* Pentru div */
 div {
-    display: flex; /* Activează flexbox */
-    flex-direction: column; /* Stivă verticală */
-    align-items: center; /* Centrează pe orizontală */
-    justify-content: center; /* Centrează pe verticală */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 }
 
-/* Pentru pagina întreagă */
+
 body {
     margin: 0;
     padding: 0;
@@ -46,35 +44,35 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Minimul pe înălțimea ferestrei */
-    background-color: #bfcde0 ; /* Fundal general */
+    min-height: 100vh; 
+    background-color: #bfcde0 ; 
     font-family: Arial, sans-serif;
 }
 
-/* Adăugare dimensiuni fixe pentru slider-container */
+
 .slider-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px; /* Înălțime fixă pentru a preveni suprapunerea */
-    width: 70%; /* Lățimea pe întreaga pagină */
-    position: relative; /* Poziție relativă pentru a controla poziționarea imaginilor */
-    overflow: hidden; /* Ascunde orice conținut în afara containerului */
-    margin: 20px auto; /* Adaugă spațiu între slider și alte elemente */
+    height: 300px; 
+    width: 70%; 
+    position: relative; 
+    overflow: hidden; 
+    margin: 20px auto; 
 }
 
-/* Ajustarea imaginilor */
+
 .slider-container img {
-    position: absolute; /* Suprapune imaginile pentru efectul de tranziție */
-    top: 0; /* Aliniere la partea de sus a containerului */
-    left: 0; /* Aliniere la partea stângă a containerului */
-    width: 100%; /* Ajustare automată a dimensiunilor pe lățime */
-    height: auto; /* Păstrarea proporțiilor imaginii */
-    opacity: 0; /* Imaginile inactive sunt invizibile */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: auto; 
+    opacity: 0; 
     transition: opacity 1s ease-in-out;
 }
 
-/* Imaginea activă */
+
 .slider-container img.active {
-    opacity: 1; /* Imaginea activă devine vizibilă */
+    opacity: 1; 
 }
